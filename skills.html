@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills — Joram Rusiana</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* Skill level progress bar styles */
+  .skill-level-bar {
+    margin-top: 10px;
+  }
+  .skill-level-bar .bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  .progress-track {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 8px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .progress-fill {
+    background-color: #2563eb;
+    height: 100%;
+    border-radius: 4px;
+  }
+  [data-theme="dark"] .progress-track {
+    background-color: #334155;
+  }
+  [data-theme="dark"] .progress-fill {
+    background-color: #3b82f6;
+  }
+</style>
+<script>
+  (function () {
+    var savedTheme = localStorage.getItem("portfolio-theme");
+    if (savedTheme === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner wrap">
+    <a href="index.html" class="logo">Joram Rusiana</a>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-controls">
+      <button id="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap page-header">
+    <h1>My Skills</h1>
+    <p>A mix of technical and non-technical skills I've been building as a BSIT student.</p>
+  </div>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML &amp; CSS</h3>
+          <p>Building structured, styled web pages with clean layouts and responsive designs.</p>
+          <div class="skill-level-bar">
+            <div class="bar-label"><span>Proficient</span><span>70%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 70%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>C++</h3>
+          <p>Applied for high-performance programming, problem-solving, and efficient memory management.</p>
+          <div class="skill-level-bar">
+            <div class="bar-label"><span>Proficient</span><span>70%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 70%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>SQL / MySQL</h3>
+          <p>Organizing, querying, and handling data retrieval for databases.</p>
+          <div class="skill-level-bar">
+            <div class="bar-label"><span>Intermediate</span><span>50%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 50%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Java</h3>
+          <p>Understood at a fundamental level for object-oriented programming concepts.</p>
+          <div class="skill-level-bar">
+            <div class="bar-label"><span>Basic</span><span>35%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 35%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Early familiarity with adding interactivity and dynamic behavior to web pages.</p>
+          <div class="skill-level-bar">
+            <div class="bar-label"><span>Beginner</span><span>30%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 30%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Adobe Animate</h3>
+          <p>Creating digital animations, interactive content, and multimedia advertisements.</p>
+          <div class="skill-level-bar">
+            <div class="bar-label"><span>Proficient</span><span>70%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 70%;"></div></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control and hosting projects</p>
+          <div class="skill-level-bar">
+            <div class="bar-label"><span>Intermediate</span><span>50%</span></div>
+            <div class="progress-track"><div class="progress-fill" style="width: 50%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>&copy; 2025 Joram Rusiana. All Rights Reserved.</p>
+    <ul class="social-links">
+      <li><a href="contact.html">Facebook</a></li>
+      <li><a href="contact.html">Instagram</a></li>
+      <li><a href="contact.html">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<button id="scroll-top-btn" aria-label="Scroll to top">&uarr;</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

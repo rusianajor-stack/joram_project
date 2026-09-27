@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joram Rusiana — Personal Portfolio</title>
+
+<!-- External CSS (all styling lives here) -->
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+  (function () {
+    var savedTheme = localStorage.getItem("portfolio-theme");
+    if (savedTheme === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
+</head>
+<body>
+
+<!-- ===== HEADER / NAVIGATION ===== -->
+<header>
+  <div class="nav-inner wrap">
+    <a href="index.html" class="logo">Joram Rusiana</a>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-controls">
+      <button id="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ===== HERO / PROFILE INTRO ===== -->
+  <section id="home" class="hero">
+    <div class="wrap hero-grid">
+      <img src="images/avatar.svg" alt="Avatar">
+      <div class="hero-text">
+        <h1>Hi, I'm Joram Rusiana</h1>
+        <p class="hero-role">I'm a <span id="typing-role">BSIT Student</span></p>
+        <p class="hero-desc">I'm interested in web development, animation, and technology. Welcome to my personal portfolio — take a look around at my skills, projects, and background.</p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-accent">View My Projects</a>
+          <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap footer-inner">
+    <p>&copy; 2025 Joram Rusiana. All Rights Reserved.</p>
+    <ul class="social-links">
+      <li><a href="contact.html">Facebook</a></li>
+      <li><a href="contact.html">Instagram</a></li>
+      <li><a href="contact.html">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<button id="scroll-top-btn" aria-label="Scroll to top">&uarr;</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

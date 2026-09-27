@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Joram Rusiana</title>
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+  (function () {
+    var savedTheme = localStorage.getItem("portfolio-theme");
+    if (savedTheme === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-inner wrap">
+    <a href="index.html" class="logo">Joram Rusiana</a>
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-controls">
+      <button id="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="wrap page-header">
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out — I'd love to hear from you.</p>
+  </div>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+
+      <div class="contact-info">
+
+        <p>
+          <strong>Name:</strong> Joram Rusiana
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:=rusianajor@gmail.com">
+           rusianajor@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <strong>Location:</strong> Negros Oriental, Philippines
+        </p>
+
+        <h3>Find me online</h3>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/share/1CEdk9SWvG/" target="_blank">
+              Facebook
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/jor_ruhm?stkn=MWI3Y2NyYzdnMWI1Zw==" target="_blank">
+              Instagram
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+              LinkedIn
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <form id="contact-form" novalidate>
+
+        <div id="form-success">
+          Thanks! Your message looks good and would be sent from here.
+        </div>
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your full name"
+          >
+          <span class="error-text" id="name-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+          >
+          <span class="error-text" id="email-error"></span>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="What is this about?"
+          >
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+          ></textarea>
+          <span class="error-text" id="message-error"></span>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+
+    <p>&copy; 2025 Joram Rusiana. All Rights Reserved.</p>
+
+    <ul class="social-links">
+
+      <li>
+        <a href="https://www.facebook.com/share/1CEdk9SWvG/" target="_blank">
+          Facebook
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.instagram.com/jor_ruhm?stkn=MWI3Y2NyYzdnMWI1Zw==" target="_blank">
+          Instagram
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.linkedin.com/" target="_blank">
+          LinkedIn
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+</footer>
+
+<button id="scroll-top-btn" aria-label="Scroll to top">
+  &uarr;
+</button>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

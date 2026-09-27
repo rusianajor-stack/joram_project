@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Joram Rusiana</title>
+<link rel="stylesheet" href="css/style.css">
+<script>
+  (function () {
+    var savedTheme = localStorage.getItem("portfolio-theme");
+    if (savedTheme === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner wrap">
+    <a href="index.html" class="logo">Joram Rusiana</a>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-controls">
+      <button id="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap page-header">
+    <h1>My Projects</h1>
+    <p>A few things I've built.</p>
+  </div>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <figure>
+            <img src="images/project-evirs.svg"
+                 alt="Placeholder image for Electronic Vehicular Incident Report System project"
+>
+            <figcaption>
+              <h3>Electronic Vehicular Incident Report System</h3>
+              <p>A web-based system for reporting vehicular incidents, with photo uploads, location info, report verification, maps, and an admin dashboard.</p>
+              <ul class="tech-tags">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="project-card">
+          <figure>
+            <img src="images/project-animation.svg"
+                 alt="Placeholder image for animation projects"
+>
+            <figcaption>
+              <h3>Animation Projects</h3>
+              <p>Animation activities made with Adobe Animate, including Squash and Stretch and Slow In / Slow Out.</p>
+              <ul class="tech-tags">
+                <li>Adobe Animate</li><li>ActionScript</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="project-card">
+          <figure>
+            <img src="images/project-website.jpg"
+                 alt="Placeholder image for personal website project"
+>
+            <figcaption>
+              <h3>Personal Website</h3>
+              <p>A desktop-linked web application for managing barangay records — including document requests, blotter entries, announcements, and generated reports for residents and staff.</p>
+              <ul class="tech-tags">
+                <li>HTML</li><li>CSS</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="project-card">
+          <figure>
+            <img src="images/project-ad-animation.svg"
+                 alt="Placeholder image for Animated Product Advertisement project">
+            <figcaption>
+              <h3>FOKUS Cold Brew Energy</h3>
+              <p>A short animated advertisement made in Adobe Animate, using motion tweens and timing to promote a sample product from start to end screen.</p>
+              <p><a href="https://www.facebook.com/share/v/1FWy3YKFXk/" target="_blank" rel="noopener noreferrer">Watch Video on Facebook</a></p>
+              <ul class="tech-tags">
+                <li>Adobe Animate</li><li>ActionScript</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>&copy; 2025 Joram Rusiana. All Rights Reserved.</p>
+    <ul class="social-links">
+      <li><a href="contact.html">Facebook</a></li>
+      <li><a href="contact.html">Instagram</a></li>
+      <li><a href="contact.html">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<button id="scroll-top-btn" aria-label="Scroll to top">&uarr;</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
